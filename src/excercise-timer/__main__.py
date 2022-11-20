@@ -1,6 +1,8 @@
 import argparse
 import time
 
+import chime
+
 
 def main(args: argparse.Namespace):
     tmp_len = 0
@@ -11,6 +13,7 @@ def main(args: argparse.Namespace):
             print(info, end="\r")
             tmp_len = len(info)
             time.sleep(1)
+        chime.success()
 
         for i in range(args.rest, -1, -1):
             info = f"rest: {i}"
@@ -18,6 +21,7 @@ def main(args: argparse.Namespace):
             print(info, end="\r")
             tmp_len = len(info)
             time.sleep(1)
+        chime.info()
 
 
 if __name__ == "__main__":

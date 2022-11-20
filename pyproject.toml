@@ -37,4 +37,4 @@ push = false
 "src/excercise-timer/__init__.py" = ["{version}"]
 
 [project.scripts]
-ecoport = "excercise-timer.__main__:main"
+excercise-timer = "excercise-timer.__main__:main"
